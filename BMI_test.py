@@ -3,7 +3,21 @@ import BMI
 
 
 class BMI_test(unittest.TestCase):
-    def test_weight_category(self):
+    def test_BMI_calculation(self):
+        # stub
+        stub1 = (1.72, 87.3)
+
+        # expected
+        expected = float()
+
+        # action
+        result1 = BMI.calculate_BMI(stub1)
+
+        # actual check
+        self.assertIsInstance(expected, result1)
+
+
+    def test_BMI_category(self):
         # stub
         stub1 = 17.3
         stub2 = 22.2
@@ -15,9 +29,9 @@ class BMI_test(unittest.TestCase):
         exptected3 = 'obese'
 
         # action
-        result1 = BMI.calculate_BMI(stub1)
-        result2 = BMI.calculate_BMI(stub2)
-        result3 = BMI.calculate_BMI(stub3)
+        result1 = BMI.BMI_category(stub1)
+        result2 = BMI.BMI_category(stub2)
+        result3 = BMI.BMI_category(stub3)
 
         # actual check
         self.assertEqual(exptected1, result1)
