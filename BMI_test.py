@@ -8,14 +8,13 @@ class BMI_test(unittest.TestCase):
         stub1 = (1.72, 87.3)
 
         # expected
-        expected = float()
+        expected = float
 
         # action
         result1 = BMI.calculate_BMI(stub1)
 
         # actual check
-        self.assertIsInstance(expected, result1)
-
+        self.assertIsInstance(result1, expected)
 
     def test_BMI_category(self):
         # stub
