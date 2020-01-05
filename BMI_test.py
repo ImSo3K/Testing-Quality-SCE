@@ -36,3 +36,7 @@ class BMI_test(unittest.TestCase):
         self.assertEqual(exptected1, result1)
         self.assertEqual(exptected2, result2)
         self.assertEqual(exptected3, result3)
+
+
+if __name__ == '__main__':
+    unittest.main()
