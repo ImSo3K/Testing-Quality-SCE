@@ -1,3 +1,5 @@
 /src/
 /test/
 /.idea
+/BMI_test.pyc
+/__pycache__/
