@@ -1,5 +1,5 @@
 import unittest
-import BMI
+from src_BMI import BMI
 
 
 class BMI_test(unittest.TestCase):

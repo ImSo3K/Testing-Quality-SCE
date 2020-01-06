@@ -1,3 +1,3 @@
 import os
 
-os.system('python3 -m unittest BMI_test.py BMI.py')
+os.system('python3 -m unittest test_BMI/BMI_test.py src_BMI/BMI.py')
