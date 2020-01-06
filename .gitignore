@@ -3,3 +3,5 @@
 /.idea
 /BMI_test.pyc
 /__pycache__/
+src_BMI/__pycache__/
+test_BMI/__pycache__/
