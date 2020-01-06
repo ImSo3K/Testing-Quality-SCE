@@ -4,6 +4,7 @@ from src_BMI import BMI
 
 class BMI_test(unittest.TestCase):
     def test_BMI_calculation(self):
+        
         # stub
         stub1 = (1.72, 87.3)
 
@@ -17,6 +18,7 @@ class BMI_test(unittest.TestCase):
         self.assertIsInstance(result1, expected)
 
     def test_BMI_category(self):
+
         # stub
         stub1 = 17.3
         stub2 = 22.2
