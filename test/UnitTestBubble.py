@@ -14,7 +14,8 @@ class MyTestCase(unittest.TestCase):
         expected2 = {stub3}
         #test
         self.assertSetEqual({BubbleSort.sort(stub1)},expected1)
-        self.assertSetEqual({BubbleSort.sort(stub2)}, expected3)
+        self.assertSetEqual({BubbleSort.sort(stub2)}, expected2)
+        self.assertSetEqual({BubbleSort.sort(stub3)}, expected3)
 
 
 
