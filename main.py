@@ -1,3 +1,6 @@
 import os
 
-os.system('python3 -m unittest test_BMI/BMI_test.py src_BMI/BMI.py')
+
+os.system('python3 -m unittest test/BMI_test.py src/BMI.py')
+os.system('python3 -m unittest test/UnitTestBubble.py src/BubbleSort.py')
+
