@@ -1,8 +1,8 @@
 def calculate_BMI(maesurments: tuple):
     try:
         BMI = maesurments[1] / (maesurments[0] ** 2)
-    except ZeroDivisionError as err:
-        return err
+    except ZeroDivisionError:
+        return ZeroDivisionError
     return BMI
 
 
