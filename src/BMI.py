@@ -7,9 +7,9 @@ def calculate_BMI(maesurments: tuple):
 
 
 def BMI_category(bmi):
-    if bmi < 18.5:
-        return 'underweight'
-    elif bmi > 25:
-        return 'obese'
-    else:
-        return 'normal-weight'
+    bmiDict={18.5:'underweight',25:'normal-weight',29.9:'excess-weight'
+        ,34.9:'obese-L1',39.9:'obese-L2',40:'obese-L3'}
+    for item in bmiDict:
+        if bmi < item:
+            return bmiDict[item]
+    return bmiDict[40]
