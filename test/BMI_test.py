@@ -14,11 +14,10 @@ class BMI_test(unittest.TestCase):
 
         # action
         result1 = BMI.calculate_BMI(stub1)
-        result2 = BMI.calculate_BMI(stub2)
 
         # actual check
         self.assertIsInstance(result1, expected1)
-        self.assertEqual(result2, expected2)
+        self.assertRaises(expected2, BMI.calculate_BMI, stub2)
 
     def test_BMI_category(self):
         # stub
